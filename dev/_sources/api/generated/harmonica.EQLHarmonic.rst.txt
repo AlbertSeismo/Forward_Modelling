@@ -1,0 +1,60 @@
+harmonica.EQLHarmonic
+=====================
+
+.. currentmodule:: harmonica
+
+.. autoclass:: EQLHarmonic
+
+.. include:: backreferences/harmonica.EQLHarmonic.examples
+
+.. raw:: html
+
+     <div style='clear:both'></div>
+
+
+
+
+
+.. automethod:: EQLHarmonic.filter
+
+
+
+.. automethod:: EQLHarmonic.fit
+
+
+
+.. automethod:: EQLHarmonic.get_params
+
+
+
+.. automethod:: EQLHarmonic.grid
+
+
+
+.. automethod:: EQLHarmonic.jacobian
+
+
+
+.. automethod:: EQLHarmonic.predict
+
+
+
+.. automethod:: EQLHarmonic.profile
+
+
+
+.. automethod:: EQLHarmonic.scatter
+
+
+
+.. automethod:: EQLHarmonic.score
+
+
+
+.. automethod:: EQLHarmonic.set_params
+
+
+
+.. raw:: html
+
+     <div style='clear:both'></div>

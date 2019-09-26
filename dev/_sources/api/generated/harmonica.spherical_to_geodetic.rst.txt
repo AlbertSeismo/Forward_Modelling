@@ -1,0 +1,12 @@
+harmonica.spherical\_to\_geodetic
+=================================
+
+.. currentmodule:: harmonica
+
+.. autofunction:: spherical_to_geodetic
+
+.. include:: backreferences/harmonica.spherical_to_geodetic.examples
+
+.. raw:: html
+
+     <div style='clear:both'></div>

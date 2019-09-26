@@ -1,0 +1,12 @@
+harmonica.normal\_gravity
+=========================
+
+.. currentmodule:: harmonica
+
+.. autofunction:: normal_gravity
+
+.. include:: backreferences/harmonica.normal_gravity.examples
+
+.. raw:: html
+
+     <div style='clear:both'></div>

@@ -1,0 +1,439 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+        <title>harmonica.coordinates &mdash; Harmonica</title>
+    
+
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+            Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-38125837-1', 'auto', {'storage': 'none'});
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/harmonica-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+    
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gallery/index.html">Gallery</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sample_data/index.html">Sample Data</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">References</a></li>
+</ul>
+
+            
+          
+
+    
+        <p class="caption">
+            <span class="caption-text">
+            
+                Getting help and contributing
+            
+            </span>
+        </p>
+        <ul>
+            
+                <li class="toctree-l1"><a href="https://www.fatiando.org"><i class="fa fa-external-link-square fa-fw"></i> Fatiando a Terra</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/fatiando/harmonica/blob/master/CONTRIBUTING.md"><i class="fa fa-users fa-fw"></i> Contributing</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/fatiando/harmonica/blob/master/CODE_OF_CONDUCT.md"><i class="fa fa-gavel fa-fw"></i> Code of Conduct</a></li>
+            
+                <li class="toctree-l1"><a href="https://gitter.im/fatiando/fatiando"><i class="fa fa-comment fa-fw"></i> Contact</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/fatiando/harmonica"><i class="fa fa-github fa-fw"></i> Source Code</a></li>
+            
+        </ul>
+    
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Harmonica</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../harmonica.html">harmonica</a> &raquo;</li>
+        
+      <li>harmonica.coordinates</li>
+    
+    
+    <li class="source-link">
+        
+        
+    </li>
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for harmonica.coordinates</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Geographic coordinate conversion.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">get_ellipsoid</span>
+
+
+<div class="viewcode-block" id="geodetic_to_spherical"><a class="viewcode-back" href="../../api/generated/harmonica.geodetic_to_spherical.html#harmonica.geodetic_to_spherical">[docs]</a><span class="k">def</span> <span class="nf">geodetic_to_spherical</span><span class="p">(</span><span class="n">longitude</span><span class="p">,</span> <span class="n">latitude</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Convert from geodetic to geocentric spherical coordinates.</span>
+
+<span class="sd">    The geodetic datum is defined by the default :class:`harmonica.ReferenceEllipsoid`</span>
+<span class="sd">    set by the :func:`harmonica.set_ellipsoid` function.</span>
+<span class="sd">    The coordinates are converted following [Vermeille2002]_.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    longitude : array</span>
+<span class="sd">        Longitude coordinates on geodetic coordinate system in degrees.</span>
+<span class="sd">    latitude : array</span>
+<span class="sd">        Latitude coordinates on geodetic coordinate system in degrees.</span>
+<span class="sd">    height : array</span>
+<span class="sd">        Ellipsoidal heights in meters.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    longitude : array</span>
+<span class="sd">        Longitude coordinates on geocentric spherical coordinate system in degrees.</span>
+<span class="sd">        The longitude coordinates are not modified during this conversion.</span>
+<span class="sd">    spherical_latitude : array</span>
+<span class="sd">        Converted latitude coordinates on geocentric spherical coordinate system in</span>
+<span class="sd">        degrees.</span>
+<span class="sd">    radius : array</span>
+<span class="sd">        Converted spherical radius coordinates in meters.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    spherical_to_geodetic : Convert from geocentric spherical to geodetic coordinates.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+
+<span class="sd">    In the poles, the radius should be the reference ellipsoid&#39;s semi-minor axis:</span>
+
+<span class="sd">    &gt;&gt;&gt; import harmonica as hm</span>
+<span class="sd">    &gt;&gt;&gt; spherical = hm.geodetic_to_spherical(longitude=0, latitude=90, height=0)</span>
+<span class="sd">    &gt;&gt;&gt; print(&quot;, &quot;.join(&quot;{:.4f}&quot;.format(i) for i in spherical))</span>
+<span class="sd">    0.0000, 90.0000, 6356752.3142</span>
+<span class="sd">    &gt;&gt;&gt; print(&quot;{:.4f}&quot;.format(hm.get_ellipsoid().semiminor_axis))</span>
+<span class="sd">    6356752.3142</span>
+
+<span class="sd">    In  the equator, it should be the semi-major axis:</span>
+
+<span class="sd">    &gt;&gt;&gt; spherical = hm.geodetic_to_spherical(longitude=0, latitude=0, height=0)</span>
+<span class="sd">    &gt;&gt;&gt; print(&quot;, &quot;.join(&quot;{:.4f}&quot;.format(i) for i in spherical))</span>
+<span class="sd">    0.0000, 0.0000, 6378137.0000</span>
+<span class="sd">    &gt;&gt;&gt; print(&quot;{:.4f}&quot;.format(hm.get_ellipsoid().semimajor_axis))</span>
+<span class="sd">    6378137.0000</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Get ellipsoid</span>
+    <span class="n">ellipsoid</span> <span class="o">=</span> <span class="n">get_ellipsoid</span><span class="p">()</span>
+    <span class="c1"># Convert latitude to radians</span>
+    <span class="n">latitude_rad</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span>
+    <span class="n">prime_vertical_radius</span> <span class="o">=</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">semimajor_axis</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span>
+        <span class="mi">1</span> <span class="o">-</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">first_eccentricity</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">latitude_rad</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="c1"># Instead of computing X and Y, we only comupute the projection on the XY plane:</span>
+    <span class="c1"># xy_projection = sqrt( X**2 + Y**2 )</span>
+    <span class="n">xy_projection</span> <span class="o">=</span> <span class="p">(</span><span class="n">height</span> <span class="o">+</span> <span class="n">prime_vertical_radius</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">latitude_rad</span><span class="p">)</span>
+    <span class="n">z_cartesian</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">height</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">first_eccentricity</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">prime_vertical_radius</span>
+    <span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">latitude_rad</span><span class="p">)</span>
+    <span class="n">radius</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">xy_projection</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">z_cartesian</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">spherical_latitude</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span><span class="n">z_cartesian</span> <span class="o">/</span> <span class="n">radius</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">longitude</span><span class="p">,</span> <span class="n">spherical_latitude</span><span class="p">,</span> <span class="n">radius</span></div>
+
+
+<div class="viewcode-block" id="spherical_to_geodetic"><a class="viewcode-back" href="../../api/generated/harmonica.spherical_to_geodetic.html#harmonica.spherical_to_geodetic">[docs]</a><span class="k">def</span> <span class="nf">spherical_to_geodetic</span><span class="p">(</span><span class="n">longitude</span><span class="p">,</span> <span class="n">spherical_latitude</span><span class="p">,</span> <span class="n">radius</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Convert from geocentric spherical to geodetic coordinates.</span>
+
+<span class="sd">    The geodetic datum is defined by the default :class:`harmonica.ReferenceEllipsoid`</span>
+<span class="sd">    set by the :func:`harmonica.set_ellipsoid` function.</span>
+<span class="sd">    The coordinates are converted following [Vermeille2002]_.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    longitude : array</span>
+<span class="sd">        Longitude coordinates on geocentric spherical coordinate system in degrees.</span>
+<span class="sd">    spherical_latitude : array</span>
+<span class="sd">        Latitude coordinates on geocentric spherical coordinate system in degrees.</span>
+<span class="sd">    radius : array</span>
+<span class="sd">        Spherical radius coordinates in meters.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    longitude : array</span>
+<span class="sd">        Longitude coordinates on geodetic coordinate system in degrees.</span>
+<span class="sd">        The longitude coordinates are not modified during this conversion.</span>
+<span class="sd">    latitude : array</span>
+<span class="sd">        Converted latitude coordinates on geodetic coordinate system in degrees.</span>
+<span class="sd">    height : array</span>
+<span class="sd">        Converted ellipsoidal height coordinates in meters.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    geodetic_to_spherical : Convert from geodetic to geocentric spherical coordinates.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+
+<span class="sd">    In the poles and equator, using the semi-minor or semi-major axis of the ellipsoid</span>
+<span class="sd">    as the radius should yield 0 height:</span>
+
+<span class="sd">    &gt;&gt;&gt; import harmonica as hm</span>
+<span class="sd">    &gt;&gt;&gt; geodetic = hm.spherical_to_geodetic(</span>
+<span class="sd">    ...     longitude=0, spherical_latitude=90, radius=hm.get_ellipsoid().semiminor_axis</span>
+<span class="sd">    ... )</span>
+<span class="sd">    &gt;&gt;&gt; print(&quot;, &quot;.join(&quot;{:.1f}&quot;.format(i) for i in geodetic))</span>
+<span class="sd">    0.0, 90.0, 0.0</span>
+<span class="sd">    &gt;&gt;&gt; geodetic = hm.spherical_to_geodetic(</span>
+<span class="sd">    ...     longitude=0, spherical_latitude=0, radius=hm.get_ellipsoid().semimajor_axis</span>
+<span class="sd">    ... )</span>
+<span class="sd">    &gt;&gt;&gt; print(&quot;, &quot;.join(&quot;{:.1f}&quot;.format(i) for i in geodetic))</span>
+<span class="sd">    0.0, 0.0, 0.0</span>
+<span class="sd">    &gt;&gt;&gt; geodetic = hm.spherical_to_geodetic(</span>
+<span class="sd">    ...     longitude=0,</span>
+<span class="sd">    ...     spherical_latitude=-90,</span>
+<span class="sd">    ...     radius=hm.get_ellipsoid().semiminor_axis + 2</span>
+<span class="sd">    ... )</span>
+<span class="sd">    &gt;&gt;&gt; print(&quot;, &quot;.join(&quot;{:.1f}&quot;.format(i) for i in geodetic))</span>
+<span class="sd">    0.0, -90.0, 2.0</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Get ellipsoid</span>
+    <span class="n">ellipsoid</span> <span class="o">=</span> <span class="n">get_ellipsoid</span><span class="p">()</span>
+    <span class="n">k</span><span class="p">,</span> <span class="n">big_d</span><span class="p">,</span> <span class="n">big_z</span> <span class="o">=</span> <span class="n">_spherical_to_geodetic_parameters</span><span class="p">(</span><span class="n">spherical_latitude</span><span class="p">,</span> <span class="n">radius</span><span class="p">)</span>
+    <span class="n">latitude</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span>
+        <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">big_z</span> <span class="o">/</span> <span class="p">(</span><span class="n">big_d</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">big_d</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">big_z</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)))</span>
+    <span class="p">)</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">first_eccentricity</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="o">/</span> <span class="n">k</span>
+        <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">big_d</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">big_z</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">longitude</span><span class="p">,</span> <span class="n">latitude</span><span class="p">,</span> <span class="n">height</span></div>
+
+
+<span class="k">def</span> <span class="nf">_spherical_to_geodetic_parameters</span><span class="p">(</span><span class="n">spherical_latitude</span><span class="p">,</span> <span class="n">radius</span><span class="p">):</span>
+    <span class="s2">&quot;Compute parameters for spherical to geodetic coordinates conversion&quot;</span>
+    <span class="c1"># Get ellipsoid</span>
+    <span class="n">ellipsoid</span> <span class="o">=</span> <span class="n">get_ellipsoid</span><span class="p">()</span>
+    <span class="c1"># Convert latitude to radians</span>
+    <span class="n">spherical_latitude_rad</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">spherical_latitude</span><span class="p">)</span>
+    <span class="n">big_z</span> <span class="o">=</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">spherical_latitude_rad</span><span class="p">)</span>
+    <span class="n">p_0</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
+        <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">spherical_latitude_rad</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+        <span class="o">/</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">semimajor_axis</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="n">q_0</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">first_eccentricity</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="o">/</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">semimajor_axis</span> <span class="o">**</span> <span class="mi">2</span>
+        <span class="o">*</span> <span class="n">big_z</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="n">r_0</span> <span class="o">=</span> <span class="p">(</span><span class="n">p_0</span> <span class="o">+</span> <span class="n">q_0</span> <span class="o">-</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">first_eccentricity</span> <span class="o">**</span> <span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="mi">6</span>
+    <span class="n">s_0</span> <span class="o">=</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">first_eccentricity</span> <span class="o">**</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">p_0</span> <span class="o">*</span> <span class="n">q_0</span> <span class="o">/</span> <span class="mi">4</span> <span class="o">/</span> <span class="n">r_0</span> <span class="o">**</span> <span class="mi">3</span>
+    <span class="n">t_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cbrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">s_0</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">s_0</span> <span class="o">+</span> <span class="n">s_0</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="n">u_0</span> <span class="o">=</span> <span class="n">r_0</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">t_0</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">t_0</span><span class="p">)</span>
+    <span class="n">v_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">u_0</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">q_0</span> <span class="o">*</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">first_eccentricity</span> <span class="o">**</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="n">w_0</span> <span class="o">=</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">first_eccentricity</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">u_0</span> <span class="o">+</span> <span class="n">v_0</span> <span class="o">-</span> <span class="n">q_0</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">v_0</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">u_0</span> <span class="o">+</span> <span class="n">v_0</span> <span class="o">+</span> <span class="n">w_0</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">w_0</span>
+    <span class="n">big_d</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">k</span>
+        <span class="o">*</span> <span class="n">radius</span>
+        <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">spherical_latitude_rad</span><span class="p">)</span>
+        <span class="o">/</span> <span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="n">ellipsoid</span><span class="o">.</span><span class="n">first_eccentricity</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">k</span><span class="p">,</span> <span class="n">big_d</span><span class="p">,</span> <span class="n">big_z</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2019, The Harmonica Developers
+      <span class="lastupdated">
+        Last updated on Sep 26, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

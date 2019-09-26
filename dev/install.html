@@ -22,13 +22,21 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
@@ -37,12 +45,18 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Gallery" href="gallery/index.html" />
     <link rel="prev" title="Disclaimer" href="index.html" />
-    
-    <script src="_static/require.js"></script>
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+            Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
+      ga('create', 'UA-38125837-1', 'auto', {'storage': 'none'});
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
 
 </head>
 
@@ -50,11 +64,10 @@
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -71,7 +84,7 @@
             
             
               <div class="version">
-                v0.1.0a1
+                dev
               </div>
             
           
@@ -108,6 +121,10 @@
 <li class="toctree-l1"><a class="reference internal" href="gallery/index.html">Gallery</a></li>
 </ul>
 <p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sample_data/index.html">Sample Data</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api/index.html">API Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
@@ -206,7 +223,7 @@
 <span id="install"></span><h1>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="which-python">
 <h2>Which Python?<a class="headerlink" href="#which-python" title="Permalink to this headline">¶</a></h2>
-<p>You’ll need <strong>Python 3.5 or greater</strong>.</p>
+<p>You’ll need <strong>Python 3.6 or greater</strong>.</p>
 <p>We recommend using the
 <a class="reference external" href="https://www.anaconda.com/download">Anaconda Python distribution</a>
 to ensure you have all dependencies installed and the <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager
@@ -219,7 +236,12 @@ doesn’t interfere with any other Python installations in your system.</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.numpy.org/">numpy</a></li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/">scipy</a></li>
+<li><a class="reference external" href="http://pandas.pydata.org/">pandas</a></li>
+<li><a class="reference external" href="https://numba.pydata.org/">numba</a></li>
+<li><a class="reference external" href="https://xarray.pydata.org/">xarray</a></li>
+<li><a class="reference external" href="https://www.attrs.org/">attrs</a></li>
 <li><a class="reference external" href="http://www.fatiando.org/pooch/">pooch</a></li>
+<li><a class="reference external" href="http://www.fatiando.org/verde/">verde</a></li>
 </ul>
 <p>Most of the examples in the <a class="reference internal" href="gallery/index.html#gallery"><span class="std std-ref">Gallery</span></a> also use:</p>
 <ul class="simple">
@@ -267,7 +289,7 @@ interpreter:</p>
         <a href="gallery/index.html" class="btn btn-neutral float-right" title="Gallery" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Disclaimer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Disclaimer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -276,8 +298,10 @@ interpreter:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018-2018, Leonardo Uieda.
-      Last updated on Sep 20, 2018.
+        &copy; Copyright 2018-2019, The Harmonica Developers
+      <span class="lastupdated">
+        Last updated on Sep 26, 2019.
+      </span>
 
     </p>
   </div>
@@ -294,33 +318,16 @@ interpreter:</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  <script type="text/javascript" src="_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
